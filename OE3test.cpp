@@ -1,3 +1,8 @@
+//name: Bajade, Darvin Kobe M.
+//activity name: Application of Branching with Conditional Statement
+//description:salary program
+//date: 9/21/2021
+
 #include<iostream>
 using namespace std;
 
