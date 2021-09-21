@@ -2,7 +2,6 @@
 //activity name: Application of Branching with Conditional Statement
 //description:salary program
 //date: 9/21/2021
-
 #include<iostream>
 using namespace std;
 
@@ -38,11 +37,13 @@ int main(){
 
     salary = c - ctax;
     //output
+    cout << "-----------Salary-------------" << endl;
    cout << "Employee ID : " << eID << endl;
    cout << "Employee Name : " << ename << endl;
    cout << "Tax rate : " << ctax << endl;
    cout << "Gross pay : " << c << endl;
    cout << "Net pay : " << salary << endl;
+   cout << "------------------------------" << endl;
 
 
    return 0;
