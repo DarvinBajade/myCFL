@@ -4,7 +4,6 @@
 //date: 10/6/2021
 
 #include <iostream>
-
 using namespace std;
 
 int main() 
