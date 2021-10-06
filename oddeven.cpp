@@ -2,6 +2,7 @@
 //activity name: PT 1
 //description: Odd and Even Scheme
 //date: 10/6/2021
+
 #include <iostream>
 
 using namespace std;
