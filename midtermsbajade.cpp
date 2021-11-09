@@ -23,7 +23,7 @@ int main (){
         cout << "[1] Kilogram to Pound" << endl;
         cout << "[2] Gram to Kilogram" << endl;
         cout << "[3] Kilogram to Ounce" << endl;
-        cout << "[4] Milliliter to Liter" << endl;
+        cout << "[4] Milligram to Gram" << endl;
         cout << "[0] End the Program" << endl;
         cout << "Select Program : ";
         cin >> a;
