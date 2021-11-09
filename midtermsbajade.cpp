@@ -110,7 +110,7 @@ void MilligramtoGram(double milligram, double gram){
     cout.setf(ios::fixed);
     cout.precision(2);
     cout << endl << "------------------------------------" << endl;
-    cout << "Gram : " << (milligram * .001) << " mg" <<endl;
+    cout << "Gram : " << (milligram * .001) << " g" <<endl;
     cout << "------------------------------------"<< endl;
 }
 
