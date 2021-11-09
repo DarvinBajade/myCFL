@@ -1,6 +1,6 @@
 //name: Bajade, Darvin Kobe M.
 //activity name: OE 5
-//description: Reverse any input string or integer
+//description: conversion of mesurements
 //date: 11/9/2021
 
 #include <iostream>
