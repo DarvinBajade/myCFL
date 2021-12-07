@@ -1,0 +1,4 @@
+
+Kobe your score is : 5
+
+kobe your score is : 5
