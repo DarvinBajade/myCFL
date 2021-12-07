@@ -12,24 +12,23 @@ void unsorted(int a[], int b);
 void ascending(int a[], int b);
 void descending(int a[], int b);
 void Tryagain();
-void password();
 int ans=1;
 
 
 const int size = 100;
 
 int main (){
-    char my_username[50] = "kobe boii",my_password[50] = "257187360",username[50],password[50];
+    char un1[50] = "kobe boii",pswrd1[50] = "257187360",username[50],password[50];
    
     cout <<"||App locked||" << endl;
-    cout << "Enter Username: " << endl;
+    cout << "Enter Username: ";
     cin.getline(username,50);
-    if(!(strcmp(my_username, username))){
+    if(!(strcmp(un1, username))){
          system("cls");
-        cout << " Correct Username " << endl;
+         cout << "Username : " << username << endl;
          cout << "Enter Password : ";
          cin.getline(password,50);
-        if(!(strcmp(my_password, password))){
+        if(!(strcmp(pswrd1, password))){
              system("cls");
             cout << " Access Granted, Welcome " << username << endl;
             system("pause");
