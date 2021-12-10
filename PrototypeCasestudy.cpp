@@ -9,7 +9,7 @@ void ShowScores();
 void ClearScores();
 
 int d, no1, ans=1;
-string name;
+char name[30];
 
 int main(){
     system("cls");
@@ -17,7 +17,7 @@ int main(){
     cout << "----------Enter your Name----------" << endl;
     cout << "-----------------------------------" << endl;
     cout << "==> ";
-    cin >> name;
+    cin.getline(name,30);
     
     do{
         system("cls");
@@ -56,7 +56,6 @@ int main(){
                 break;
             }
         }
-
     }while(ans==1);
 }
 
@@ -64,7 +63,7 @@ void GameStart(){
     ofstream File;
     File.open("Highscores.txt", ios:: app);
 
-    int score=5;
+    int score=0;
     system("cls");
     cout << "------------------------------------" << endl;
     cout << "Q no.1" << endl;
@@ -75,11 +74,15 @@ void GameStart(){
     cin.ignore();
     cin >> no1;
     if(no1==2){
-        cout << "correct";
+        system("cls");
+        ++score;
+        cout << "correct" << endl;
+        system("pause");
     }
     else{
-        --score;
-        cout << "incorrect";
+        system("cls");
+        cout << "incorrect" << endl;
+        system("pause");
     }
     system("cls");
     cout << "------------------------------------" << endl;
@@ -91,12 +94,16 @@ void GameStart(){
     cout << "3. Return Function"<< endl;
     cin.ignore();
     cin >> no1;
-    if(no1==1){
+     if(no1==1){
+        system("cls");
+        ++score;
         cout << "correct" << endl;
+        system("pause");
     }
     else{
-        --score;
+        system("cls");
         cout << "incorrect" << endl;
+        system("pause");
     }
     system("cls");
     cout << "------------------------------------" << endl;
@@ -109,11 +116,15 @@ void GameStart(){
     cin.ignore();
     cin >> no1;
     if(no1==3){
+        system("cls");
+        ++score;
         cout << "correct" << endl;
+        system("pause");
     }
     else{
-        --score;
+        system("cls");
         cout << "incorrect" << endl;
+        system("pause");
     }
     system("cls");
     cout << "------------------------------------" << endl;
@@ -125,11 +136,15 @@ void GameStart(){
     cin.ignore();
     cin >> no1;
     if(no1==2){
+        system("cls");
+        ++score;
         cout << "correct" << endl;
+        system("pause");
     }
     else{
-        --score;
+        system("cls");
         cout << "incorrect" << endl;
+        system("pause");
     }
     system("cls");
     cout << "------------------------------------" << endl;
@@ -143,11 +158,119 @@ void GameStart(){
     cin.ignore();
     cin >> no1;
     if(no1==1){
+        system("cls");
+        ++score;
         cout << "correct" << endl;
+        system("pause");
     }
     else{
-        --score;
+        system("cls");
         cout << "incorrect" << endl;
+        system("pause");
+    }
+    system("cls");
+    cout << "------------------------------------" << endl;
+    cout << "Q no.6" << endl;
+    cout << "Refers to the order in which"<< endl;
+    cout << "program statements are performed" << endl;
+    cout << "1. Flow of Control "<< endl;
+    cout << "2. Sequential"<< endl;
+    cout << "3. Left to right"<< endl;
+    cin.ignore();
+    cin >> no1;
+    if(no1==1){
+        system("cls");
+        ++score;
+        cout << "correct" << endl;
+        system("pause");
+    }
+    else{
+        system("cls");
+        cout << "incorrect" << endl;
+        system("pause");
+    }
+    system("cls");
+    cout << "------------------------------------" << endl;
+    cout << "Q no.7" << endl;
+    cout << "What is the acronym of RAM"<< endl;
+    cout << "1. Real Access Memory"<< endl;
+    cout << "2. Random Acute Mainframe"<< endl;
+    cout << "3. Random Access Memory"<< endl;
+    cin.ignore();
+    cin >> no1;
+    if(no1==3){
+        system("cls");
+        ++score;
+        cout << "correct" << endl;
+        system("pause");
+    }
+    else{
+        system("cls");
+        cout << "incorrect" << endl;
+        system("pause");
+    }
+    system("cls");
+    cout << "------------------------------------" << endl;
+    cout << "Q no.8" << endl;
+    cout << "Keyboard and Mouse is an example"<< endl;
+    cout << "of a ______ device" << endl;
+    cout << "1. output"<< endl;
+    cout << "2. input"<< endl;
+    cout << "3. sideput"<< endl;
+    cin.ignore();
+    cin >> no1;
+   if(no1==2){
+        system("cls");
+        ++score;
+        cout << "correct" << endl;
+        system("pause");
+    }
+    else{
+        system("cls");
+        cout << "incorrect" << endl;
+        system("pause");
+    }
+    system("cls");
+    cout << "------------------------------------" << endl;
+    cout << "Q no.9" << endl;
+    cout << "Who is known as the father"<< endl;
+    cout << "of all computers" << endl;
+    cout << "1. Albert Einstein"<< endl;
+    cout << "2. Blaise Pascal"<< endl;
+    cout << "3. Charles Babbage"<< endl;
+    cin.ignore();
+    cin >> no1;
+    if(no1==3){
+        system("cls");
+        ++score;
+        cout << "correct" << endl;
+        system("pause");
+    }
+    else{
+        system("cls");
+        cout << "incorrect" << endl;
+        system("pause");
+    }
+    system("cls");
+    cout << "------------------------------------" << endl;
+    cout << "Q no.10" << endl;
+    cout << "When was the first computer" << endl;
+    cout << "invented" << endl;
+    cout << "1. 1943"<< endl;
+    cout << "2. 1951"<< endl;
+    cout << "3. 1937"<< endl;
+    cin.ignore();
+    cin >> no1;
+    if(no1==1){
+        system("cls");
+        ++score;
+        cout << "correct" << endl;
+        system("pause");
+    }
+    else{
+        system("cls");
+        cout << "incorrect" << endl;
+        system("pause");
     }
 
     File << endl << name << " your score is : " << score << endl;
