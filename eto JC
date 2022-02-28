@@ -1,0 +1,168 @@
+import java.io.*; 
+public class novoid{
+public static void main(String args[])throws Exception{
+    InputStreamReader a=new InputStreamReader(System.in);    
+    BufferedReader ab=new BufferedReader(a); 
+    
+    int ans=1,menu,path=2,path2=2,eatlotus,path3=0;
+    int lotusflower=0, men=100, sheep=0,drunksheep=0,SackofStormWinds=0;
+    String name = " ", key = " ";
+
+    do{
+    System.out.print("\033[H\033[2J");  
+    System.out.println("Welcome to -Title here-"); 
+    System.out.println("[1] Start"); 
+    System.out.println("[2] Credits"); 
+    System.out.println("[3] Exit"); 
+    menu = Integer.parseInt(ab.readLine());   
+        
+        switch(menu){
+            case 1:{
+                //character creation
+                System.out.print("\033[H\033[2J");  
+                System.out.println("Case 1");
+                do{System.out.print("\033[H\033[2J");  
+                System.out.println("What is your name?");
+                System.out.print("Name : ");
+                name = ab.readLine();
+                System.out.print("\033[H\033[2J"); 
+                System.out.println("So you are "+name);   
+                System.out.println("Yes : 1");
+                System.out.println("No : 2");
+                path = Integer.parseInt(ab.readLine());   
+                }while(path==2);
+                //scene 1(lotus)
+                do{System.out.print("\033[H\033[2J");
+                System.out.println("After the fall of troy you and your weary men traverse through and stumble");
+                System.out.println("upon an island and you proceed to explore the island to rest and recuperate");
+                System.out.print("\nPress any key to continue");
+                key = ab.readLine();
+                System.out.print("\033[H\033[2J");
+                System.out.println("After embarking on the island, they soon found out that they landed ");
+                System.out.println("on the island of the lotus eaters. The inhabitants of the island gave ");
+                System.out.println("you and your men their flower food to eat. What do you do?");
+                System.out.println("[1] : Accept the offer");
+                System.out.println("[2] : Deny the offer");
+                eatlotus = Integer.parseInt(ab.readLine()); 
+                if(eatlotus==1){
+                System.out.print("\033[H\033[2J");
+                System.out.println("After accepting the food of the natives you start to realize that some of your ");
+                System.out.println("men that have eaten the food, they have lost their longing for home after seeing");
+                System.out.println("that you tell your men to take the ones that have been charmed back");
+                System.out.println("to the ship and sail out back to sea.");
+                System.out.println("");
+                System.out.println("*+ 1 lotus flower - 20 men*");
+                System.out.print("\nPress any key to continue");
+                men = men - 20;
+                ++lotusflower;
+                key = ab.readLine();
+                }else{
+                System.out.print("\033[H\033[2J");
+                System.out.println("After refusing their offering you take your men back to sea.");
+                System.out.print("\nPress any key to continue");
+                key = ab.readLine();
+                }
+                //scene 2 (sail)
+                System.out.print("\033[H\033[2J");
+                System.out.println("You and your "+men+" men ventured into the vast ocean.");
+                System.out.println("towards your next location the island of the Cyclops Polyphemus");
+                System.out.print("\nPress any key to continue");
+                key = ab.readLine();
+                path2 = path2 - 1;
+                }while(path2==2);
+                System.out.print("\033[H\033[2J");
+                System.out.println("After exploring the island polyphemus has discovered you, and has eaten");
+                System.out.println("half of your men and taken the other half as captives leaving you all alone to escape.");
+                System.out.print("\nPress any key to continue");
+                key = ab.readLine();
+                men = 0;
+                System.out.print("\033[H\033[2J");
+                System.out.println("after a while of wandering around you found the lair of the Cyclops polyphemus and where");
+                System.out.println("your men are held captive. You also see that there is a herd of sheep and a giant staff.");
+                System.out.println("What do you do?");
+                System.out.println("[1] : steal the staff");
+                System.out.println("[2] : sneak few of your men and take the sheep back to the ship.");
+                if(lotusflower==1){System.out.println("[3] : feed the lotus to the herd of sheep");}
+                path3 = Integer.parseInt(ab.readLine());  
+                System.out.print("\033[H\033[2J");
+                if(path3 == 1){System.out.println("after stealing the staff you sharpen it and heated the staff and struck polyphemus in his eye wounding him");
+                System.out.println("and escaping with your men tying yourselves to the bellies of the sheep let out to pasture.");
+                System.out.println(" ");
+                System.out.println("*+ 40 men + 12 sheep*");
+                System.out.print("\nPress any key to continue");
+                key = ab.readLine();
+                men = men + 40;
+                sheep = sheep + 12;
+                }else if(path3 == 2){ System.out.println("You managed to sneak 20 of your men out of captivity and stole 6 sheep and");
+                System.out.println("gathered them onto the ship");
+                System.out.println(" ");
+                System.out.println("*+ 20 men + 6 sheep*");
+                System.out.print("\nPress any key to continue");
+                key = ab.readLine();
+                men = 20;
+                sheep = 6;
+                }else if(path3 == 3 && lotusflower==1){ System.out.println(" ");
+                System.out.println("After feeding the sheep with the lotus flower. You waited until sunset, then the Cyclops became hungry again");
+                System.out.println("and ate some of the intoxicated sheep. Polyphemus got poisoned then later died. You proceed to rescue your men");
+                System.out.println("and take 3 sheep with you back to the sheep");
+                System.out.println(" ");
+                System.out.println("*+40 men +3 intoxicated sheep");
+                System.out.print("\nPress any key to continue");
+                key = ab.readLine();
+                men = 40;
+                drunksheep = 3;
+                }else{System.out.println("Invalid input");
+                prompt(ans);}
+                //scene 3(Aeolus)
+                System.out.println("After escaping from the island of polyphemus you sail back out to sea and stumbled upon the aeolian island ruled by ");
+                System.out.println("king Aeolus king of the winds. You and your men stayed for one month and when time to leave came the king gave them ");
+                System.out.println("favorable winds and also gave you a leather sack of storm winds and reminds you to guard it at all times.");
+                System.out.println(" ");
+                System.out.println("*+ 1 Sack of Storm winds");
+                System.out.print("\nPress any key to continue");
+                key = ab.readLine();
+                SackofStormWinds = 1;
+                break;
+            }
+            case 2:{
+                System.out.print("\033[H\033[2J");  
+                System.out.println("Case 2");
+                break;
+            }
+            case 3:{
+                System.out.print("\033[H\033[2J");  
+                System.out.println("Case 3");
+                break;
+            }
+            default:{
+               System.out.print("\033[H\033[2J");  
+               System.out.println("Wrong input");
+               prompt(ans);
+            }
+        }
+    }while(ans==1);
+}
+public static void prompt(int ans)throws Exception{
+    InputStreamReader a=new InputStreamReader(System.in);    
+    BufferedReader ab=new BufferedReader(a); 
+    System.out.print("\033[H\033[2J");  
+    System.out.println("Do you want to try again?");
+    System.out.println("[1] Yes");
+    System.out.println("[2] Exit");
+    ans = Integer.parseInt(ab.readLine());   
+}
+public static void CharacterCreation(String name)throws Exception{
+    InputStreamReader a=new InputStreamReader(System.in);    
+    BufferedReader ab=new BufferedReader(a);
+    System.out.print("\033[H\033[2J");  
+    System.out.println("What is your name?");
+    System.out.print("Name : ");
+    name = ab.readLine();
+}
+public static void dialouge1(String name)throws Exception{
+    InputStreamReader a=new InputStreamReader(System.in);    
+    BufferedReader ab=new BufferedReader(a);
+    System.out.print("\033[H\033[2J"); 
+    System.out.print("So you are "+name);   
+}
+}
